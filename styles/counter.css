@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif;
+}
+
+body {
+  background-color: rgb(119, 139, 158);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_content {
+  text-align: center;
+  width: 700px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+.count {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.buttons-container {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+
+.increase {
+  border: none;
+  color: white;
+  background-color: rgb(24, 119, 0);
+  height: 60px;
+  width: 150px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.decrease {
+  border: none;
+  color: white;
+  background-color: rgb(126, 0, 0);
+  height: 60px;
+  width: 150px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.increase:hover, .decrease:hover {
+  opacity: 65%;
+}
+
+@media screen and (max-width: 800px) {
+  .main_content {
+    width: 80%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .count {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .count {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .increase, .decrease {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+  }
+
+  .buttons-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .title {
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .count {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .increase {
+    margin-bottom: 20px;
+  }
+
+  .buttons-container {
+    margin-bottom: 5px;
+  }
+}
